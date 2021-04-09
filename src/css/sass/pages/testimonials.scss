@@ -1,0 +1,80 @@
+.testimonials{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: linear-gradient(rgba(0,0,0,.1)), url('/dist/imgs/ts.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    .heading{
+        h2{
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+    }
+    .ts-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 50px;
+        .ts-text{
+            flex-basis: 50%;
+            p{
+                line-height: 2.5;
+                text-align: right;
+                position: relative;
+                &::before{
+                    content: ',,';
+                    position: absolute;
+                    bottom: -40px;
+                    right: -60px;
+                    font-size: 5rem;
+                    
+                }
+                &::after{
+                    content: ',,';
+                    position: absolute;
+                    top: -60px;
+                    left: -40px;
+                    font-size: 5rem;
+                    transform: rotate(180deg);
+                    
+                }
+            }
+        }
+        .ts-client{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-basis: 40%;
+            .client-img{
+                
+                img{
+                    border: 5px solid #fff;
+                    border-radius: 50%;
+                    width: 100%;
+                }
+            }
+            .client-info{
+                
+                text-align: initial;
+                text-align: center;
+                h4{
+                    font-size: 1.8rem;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+                span{
+                    color: #c714d5;
+                    font-size: .8rem;
+                }
+            }    
+            
+        }
+    }    
+    
+}
