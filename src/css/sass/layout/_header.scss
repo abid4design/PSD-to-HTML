@@ -1,0 +1,84 @@
+.banner{
+    background-image: linear-gradient(rgba(35,45,80,.7),rgba(35,45,80,.7)),url('/dist/imgs/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    nav{
+        background-color: #15263e;
+        color: #fff;
+        .links{
+            text-align: center;
+            padding: 20px 0;
+            li{
+                display: inline-block;
+                padding: 10px 20px;
+                position: relative;
+                a{
+                    color: inherit;
+                    text-transform: uppercase;
+                }
+            &::before {
+                content: '-';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: -5px;
+            }
+            &:last-child::before {
+                content: '';
+            }     
+            }
+        }
+        
+    }
+    .banner-intro{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        
+        h1{
+            span:first-child{
+                display: block;
+                font-size: 12rem;
+                letter-spacing: 4px;
+                background: linear-gradient(to right,#a21af0 ,#ff0072);
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+            span:last-child{
+                display: block;
+                font-size: 8rem;
+                letter-spacing: 40px;
+                margin-left: 32px;
+                margin-top: -40px;
+            }
+        }
+        p{
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 1.5rem;
+        }
+        a{
+            padding: 10px 20px;
+            background: linear-gradient(to right,#a21af0 ,#ff0072);
+            border: none;
+            outline: none;
+            margin-top: 70px;
+            color: #fff;
+            cursor: pointer;
+            display: inline-block;
+        }
+      
+    }
+    .banner-intro > span{
+        font-size: 2rem;
+        display: block;
+        margin-bottom: -25px;
+        font-weight: bold;
+        
+    }
+}
