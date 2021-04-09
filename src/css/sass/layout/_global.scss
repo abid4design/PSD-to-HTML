@@ -12,6 +12,10 @@ ul{
 a{
     text-decoration: none;
 }
-h1, p{
+h1, h2, h5, p{
     margin: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
 }

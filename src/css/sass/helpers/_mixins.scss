@@ -1,0 +1,8 @@
+@mixin textGradient {
+    background: linear-gradient(to right,#a21af0 ,#ff0072);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.linearGradient{
+    background: linear-gradient(to right,#a21af0 ,#ff0072);
+} 

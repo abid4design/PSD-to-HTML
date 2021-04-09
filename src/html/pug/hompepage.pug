@@ -9,28 +9,81 @@ html(lang="en")
         title Creative One Page Portfolio
     body 
     //- Start banner
-    section.banner 
+    section.banner
         //- Start navigation
         nav 
-            ul.links
-                li 
-                    a(href="#") home  
-                li 
-                    a(href="#") about 
-                li 
-                    a(href="#") our serivces  
-                li 
-                    a(href="#") portfolio  
-                li 
-                    a(href="#") experience 
-                li 
-                    a(href="#") blog 
-                li 
-                    a(href="#") contact 
-        .banner-intro 
-            span hello, i am
-            h1
-                span john
-                span smith
-            p I have more then 10 years of Experience
-            a(href="#")  Download CV          
+            .container
+                ul.links
+                    li 
+                        a(href="#") home  
+                    li 
+                        a(href="#") about 
+                    li 
+                        a(href="#") our serivces  
+                    li 
+                        a(href="#") portfolio  
+                    li 
+                        a(href="#") experience 
+                    li 
+                        a(href="#") blog 
+                    li 
+                        a(href="#") contact 
+        .container                
+            .banner-intro 
+                span hello, i am
+                h1
+                    span john
+                    span smith
+                p I have more then 10 years of Experience
+                a(href="#")  Download CV
+    //- Start Abous Us
+    section.about-us
+        .container
+            .info 
+                .left-side
+                    h2 John Smith
+                    span Web designer
+                    p Lorem ipsum dolor sit amet, consectetur adipielit. Sunt sed ad possimus magm maiores.Ipa Lorem ipsum dolor sit amet, consectetur adiic Sunt sed ad posimus magnam maores. Ipsam as velt blanditiis debitis consequuntur mollita umenda nam obcaecati illo!
+                .center-image
+                    img(src="/dist/imgs/person.jpg", alt="")
+                .right-side
+                    .progress 
+                        p Design ( 80% )
+                        .progress-bar 
+                            span
+                    .progress 
+                        p Photography ( 65% )
+                        .progress-bar 
+                            span
+                    .progress 
+                        p Marketing ( 50% )
+                        .progress-bar 
+                            span
+                    .progress 
+                        p Branding ( 30% )
+                        .progress-bar 
+                            span
+        .contact-info
+            .container
+                .contact-boxes
+                    div 
+                        .circle 
+                            i.fa.fa-mobile 
+                        .info 
+                            h5 Phone number
+                            p +1 234 456-789
+                            p +123-456-7890
+                    div 
+                        .circle 
+                            i.fa.fa-location-arrow 
+                        .info 
+                            h5 Address
+                            p 8, Belgium, Brussels,
+                            p Liutte 207 New York, USA
+                    div 
+                        .circle 
+                            i.fa.fa-envelope 
+                        .info 
+                            h5 Email Address
+                            p johnsmith@company.com
+                            p youoffice@company.com
