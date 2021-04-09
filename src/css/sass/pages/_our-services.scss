@@ -19,6 +19,7 @@
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
         gap: 20px;
         .service{
+            margin-bottom: 20px;
             i{
                 width: 110px;
                 height: 110px;
@@ -32,6 +33,7 @@
                font-size: 1.2rem;
                font-weight: bold;
                text-transform: uppercase; 
+               margin: 20px 0;
             }
             p{
                 line-height: 1.4;
