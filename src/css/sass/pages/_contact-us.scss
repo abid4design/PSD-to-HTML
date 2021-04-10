@@ -23,6 +23,8 @@
             }
             textarea{
                 padding-left: 5px;
+                resize: none;
+                flex-basis: 100%;
                 &:focus{
                     outline: none;
                 }
