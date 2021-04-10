@@ -1,0 +1,26 @@
+.blog{
+    @extend .padding;
+    @extend .heading;
+    text-align: initial;
+    .boxes{
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+        gap: 40px;
+        .box{
+            figure{
+                figcaption{
+                    margin: 10px 0;
+                }
+            }
+            h5{
+                font-size: 1.1rem;
+                margin-bottom: 10px;
+            }
+            p{
+                line-height: 1.4;
+                font-size: .8rem;
+            }
+        }
+    }
+}
