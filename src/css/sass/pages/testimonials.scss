@@ -1,19 +1,18 @@
 .testimonials{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    @extend .padding;
     background-image: linear-gradient(rgba(0,0,0,.1)), url('/dist/imgs/ts.jpg');
     background-position: center;
     background-size: cover;
-    text-align: center;
     color: #fff;
-    .heading{
+    @extend.heading;
+    /* .heading{
         h2{
             font-size: 2.5rem;
             font-weight: bold;
             margin-bottom: 15px;
             text-transform: uppercase;
         }
-    }
+    } */
     .ts-content{
         display: flex;
         justify-content: space-between;
