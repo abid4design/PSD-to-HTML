@@ -1,0 +1,60 @@
+.experiences{
+    @extend .padding;
+    @extend .heading;
+    @extend .linearGradient;
+    color: #fff;
+    .experience{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 60px;
+        flex-direction: row;
+        &:nth-child(odd){
+            flex-direction: row-reverse;
+            .info{
+                text-align: left;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 10px;
+                    height: 80%;
+                    background-color: #fff;
+                    top: 0;
+                    left: -40%;
+                }
+                h4{
+                    margin-bottom: 10px;
+                }
+            }
+            .text{
+                text-align: right;
+            }
+        }
+        .info{
+            text-align: right;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 10px;
+                height: 80%;
+                background-color: #fff;
+                top: 0;
+                right: -40%;
+            }
+            h4{
+                margin-bottom: 10px;
+                font-size: 1.2rem
+            }
+        }
+        .text{
+            flex-basis: 75%;
+            text-align: left;
+            p{
+                line-height: 1.4;
+                font-size: .9rem;
+            }
+        }
+    }
+
+}
